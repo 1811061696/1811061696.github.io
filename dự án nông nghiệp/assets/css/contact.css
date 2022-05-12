@@ -1,0 +1,114 @@
+.contact-color{
+    background-color: #96b285;
+    color: var(--text-color);
+}
+
+.contect{
+    background-color: var(--white-color);
+    padding: 30px 24px;
+}
+
+.contect__header{
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12rem;
+    color: #818181;
+    font-weight: 600;
+    padding-bottom: 20px;
+    margin: 0;
+}
+
+.contect__text{
+    margin: 0;
+    font-size: 1.4rem;
+    line-height: 1.8;
+    letter-spacing: 0.02rem;
+    text-align: justify;
+    color: #356618;
+    font-weight: 400;
+    padding: 12px 0;
+}
+
+.contact__information{
+    margin-top: 28px;
+}
+
+.contact__information-list{
+    list-style: none;
+    padding-left: 0;
+}
+
+.contact__information-item{
+    display: flex;
+    margin-bottom: 20px;
+
+}
+
+.contact__information-name{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    margin: 0;
+    color: #836145;
+    letter-spacing: 0.02rem;
+    width: 300px;
+    height: auto;
+    line-height: 1.4;
+}
+
+.contact__information-input{
+    background: #dce9d4;
+    border: none;
+    color: var(--text-color);
+    font-size: 1.4rem;
+    height: 25px;
+    width: 500px;
+    letter-spacing: 0.02rem;
+    padding: 2px 4px;
+    border-radius: 3px;
+    border-style: none;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+}
+
+#message{
+    background: #dce9d4;
+    border: none;
+    color: #818181;
+    font-size: 1.4rem;
+    height: 200px;
+    width: 500px;
+    letter-spacing: 0.02rem;
+    border-radius: 3px;
+    line-height: 1.4;
+    padding: 2px 5px;
+    resize: none;
+    overflow: auto;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+}
+
+.contact__information-send{
+    border: none;
+    cursor: pointer;
+    font-size: 1.4rem;
+    text-align: center;
+    height: 25px;
+    width: 100px;
+    line-height: 25px;
+    letter-spacing: 0.09rem;
+    text-shadow: 1px 1px 1px #514b61;
+    text-transform: uppercase;
+    color: var(--white-color);
+    background-image: linear-gradient(0, #c45a0b ,#e1924f);
+    border-radius: 3px;
+    font-weight: 400;
+    margin-left: 63.5%;
+    margin-bottom: 20px;
+    padding: 0;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.contact__information-send:hover{
+    opacity: 0.8;
+}

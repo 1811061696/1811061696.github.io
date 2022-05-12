@@ -1,0 +1,132 @@
+.new-color{
+    background-color: #96b285;
+    color: var(--text-color);
+}
+
+.new{
+    background-color: var(--white-color);
+    padding: 30px 24px;
+    display: flex;
+}
+
+.new__content{
+    width: 70%;
+    border-right: 1px solid #96b285;
+}
+
+.new__content-header{
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12rem;
+    color: #818181;
+    font-weight: 600;
+    padding-bottom: 20px;
+    margin: 0;
+}
+
+
+.new__content-img{
+    width: 95%;
+    object-fit: contain;
+}
+
+.new__information{
+    width: 95%;
+    margin: 16px 0 8px;
+}
+
+.new__information-name{
+    margin: 0;
+    font-size: 1.8rem;
+    letter-spacing: 0.02rem;
+    margin-bottom: 12px;
+    color: #836145;
+    text-align: justify;
+    font-weight: 600;
+}
+
+.new__information-time{
+    margin: 0;
+    color: #818181;
+    font-size: 1.4rem;
+    text-align: justify;
+    letter-spacing: 0.04rem;
+    line-height: 1.6;
+}
+
+.new__information-address{
+    margin: 0;
+    color: #818181;
+    font-size: 1.4rem;
+    text-align: justify;
+    letter-spacing: 0.04rem;
+    line-height: 1.6;
+}
+
+.new__content-text{
+    width: 95%;
+    margin: 0;
+    font-size: 1.4rem;
+    line-height: 1.8;
+    letter-spacing: 0.02rem;
+    text-align: justify;
+    color: #356618;
+    font-weight: 400;
+    padding: 12px 0;
+}
+
+.new__content-link{
+    color: #356618;
+    outline: none;
+}
+
+.new__content-link:hover{
+    color: #66a143;
+}
+
+
+.new__navbar{
+    width: 30%;
+    padding: 0 20px;
+}
+
+.new__navbar-list{
+    list-style: none;
+    margin: 0;
+    padding: 0 0 22px;
+}
+
+.new__navbar-list-item{
+    margin-bottom: 26px;
+    border-bottom: 1px solid #96b285;
+}
+
+.new__navbar-list-item:last-child{
+    border-bottom: unset;
+}
+
+.new__navbar-item-title{
+    margin: 0;
+    color: #818181;
+    letter-spacing: 0.04rem;
+    font-weight: 600;
+    padding-bottom: 18px;
+    font-size: 1.6rem;
+}
+
+.new__navbar-item-item{
+    font-size: 1.4rem;
+    padding-bottom: 12px;
+    line-height: 1.4;
+    text-align: justify;
+    letter-spacing: 0.02rem;
+}
+
+.new__navbar-item-link{
+    text-decoration: none;
+    color: #818181; 
+}
+
+.new__navbar-item-link:hover{
+    color: var(--text-color);
+}

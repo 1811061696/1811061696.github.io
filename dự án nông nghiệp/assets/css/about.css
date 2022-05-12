@@ -1,0 +1,53 @@
+.about__content{
+    background-color: var(--white-color);
+    padding: 30px 24px;
+    border-top: 1px solid #5d8546;
+    overflow: hidden;
+}
+
+.about-color{
+    background-color: #96b285;
+    color: var(--text-color);
+}
+
+.about__header{
+    margin: 0;
+    color: #818181;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    padding-bottom: 12px;
+}
+
+.about__item{
+    margin-bottom: 8px;
+}
+
+.about__item-title{
+    color: #836145;
+    font-size: 1.8rem;
+    line-height: 1.6;
+    margin: 0;
+    padding-top: 10px;
+    font-weight: 600;
+    letter-spacing: 0.06rem;
+}
+
+.about__item-text{
+    font-size: 1.4rem;
+    line-height: 1.6;
+    text-align: justify;
+    color: #356618;
+    margin: 0;
+    padding: 4px 0 8px;
+    font-weight: 400;
+}
+
+.about__item-link{
+    color: #356618;
+    outline: none;
+}
+
+.about__item-link:hover {
+    color: #66a143;
+}
