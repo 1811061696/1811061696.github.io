@@ -1,0 +1,267 @@
+/* mobile tablet */
+
+@media (max-width: 1023px) {
+    .plants__product-item{
+        display: block;
+    }
+
+    .plants__product-img{
+        object-fit: contain;
+        width: 100%;
+    }
+
+    .plants__product-item-content{
+        margin-left: 0px;
+    }
+
+    .plants__text{
+    letter-spacing: unset;
+    }
+}
+
+/* tablet pro  */
+@media (min-width:1024px) and (max-width:1365px){
+    .product__list-item:last-child{
+        margin-left: 0;
+        margin-top: 26px;
+    }
+}
+
+
+/* tablet */
+@media (min-width:740px) and (max-width: 1023px) {
+    .app{
+        padding-bottom: 50px;
+    }
+    .classify-list:nth-child(2){
+        margin: 12px 0;
+    }
+
+    .classify{
+        display: block;
+        padding: 0;
+        margin: 12px 0;
+    }
+
+    .classify-list::after{
+        display: none;
+    }
+
+    .product__list-item:first-child{
+        margin-left: auto;
+    }
+
+    .product__list-item:last-child{
+        margin-right: auto;
+    }
+    
+
+    .advice{
+        display: block;
+    }
+    .advice-img{
+        width: 100%;
+    }
+
+    .footer__item{
+        padding: 20px 20px;
+    }
+
+    .advice__content-title{
+        margin: 0;
+    }
+
+    .footer__header-title{
+        font-size: 1.6rem;
+        text-align: unset;
+        line-height: 1.4;
+    }
+    
+    .footer__item-link a{
+        text-align: unset;
+    }
+
+    .contact__information-name{
+        width: 250px;
+    }
+
+    .contact__information-send{
+        margin-left: 81.5%;
+    }
+}
+
+
+
+/* mobile */
+@media (max-width: 739px) {
+    .main{
+        margin: 0 8px;
+    }
+    .header__logo-img{
+        width: 50%;
+    }
+
+
+    .header__navbar-list{
+        display: block;
+    }
+
+    .mobile__menu-btn{
+        display: block;
+    }
+
+    .header__navbar-item a{
+        text-align: left;
+        padding-left: 12px;
+    }
+
+    .gardening__img-link{
+        min-height: 200px;
+    }
+
+    .gardening__content-title{
+        font-size: 2rem;
+        padding: 8px 0;
+    }
+
+    .gardening__content-text{
+        font-size: 1.2rem;
+        margin: 0 0 8px;
+        line-height: 1.4;
+    }
+
+    .product__list{
+        display: block;
+    }
+
+    .classify{
+        display: block;
+        padding: 0;
+        margin: 12px 0;
+    }
+
+    .product__list-item{
+        max-width: unset;
+        padding-bottom: 8px;
+        /* border-bottom: 2px solid #b3cca4; */
+    }
+
+    .product__item-img{
+        width: 100%;
+        border-radius: 2px;
+    }
+
+    .classify-list:nth-child(2){
+        margin: 12px 0;
+    }
+
+    .product__list-item:first-child{
+        margin-left: auto;
+    }
+
+    .product__list-item:last-child{
+        margin-right: auto;
+    }
+    
+    .product__item-title{
+        padding:4px 0;
+    }
+    .advice{
+        display: block;
+    }
+    .advice-img{
+        width: 100%;
+    }
+
+    .advice__content-title{
+        margin: 12px 0 0;
+    }
+
+    .footer__menu{
+        flex-wrap: wrap;
+    }
+
+    .footer__header-title{
+        font-size: 1.4rem;
+        line-height: 1.4;
+    }
+
+    .footer__item{
+        padding: 20px 28px;
+    }
+
+    .footer__item-link a{
+        text-align: unset;
+    }
+
+    .gradens__product-item{
+        display: block;
+    }
+
+    .gradens__product-img{
+        object-fit: contain;
+        width: 100%;
+    }
+
+    .gradens__product-item-content{
+        margin-left: 0px;
+    }
+
+    .gradens__text{
+    letter-spacing: unset;
+    }
+
+    .gradens__title{
+        padding-top: 12px;
+    }
+
+
+    /* news */
+
+    .new{
+        display: block;
+    }
+
+    .new__content{
+        border-right: unset;
+        width: 100%;
+    }
+
+    .new__content-img{
+        width: 100%;
+    }
+
+    .new__information{
+        width: 100%;
+    }
+
+    .new__content-text{
+        width: 100%;
+    }
+
+    .new__navbar{
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .new__navbar-list{
+        padding: 0;
+    }
+
+    .new__navbar-list-item{
+        margin: 24px 0;
+        border-bottom:unset ;
+    }
+
+    .new__navbar-item-item{
+        letter-spacing: 0.009rem;
+    }
+   
+    .contact__information-name{
+        width: 200px;
+    }
+
+    .contact__information-send{
+        margin-left: 71.5%;
+    }
+}

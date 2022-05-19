@@ -1,0 +1,399 @@
+.app{
+    overflow: hidden;
+    background: url(../img/bg-body.jpg);
+}
+
+.body__color{
+    background-color: #356618;
+    margin-bottom: 50px;
+}
+
+.main{
+    margin: 0 25px;
+}
+
+.gird{
+    margin: 0 25px;
+}
+
+.header{
+    background-color: var(--white-color);
+}
+
+.header__logo{
+    text-align: center;
+    padding: 20px 0;
+}
+
+.header__navbar{
+    background-color: #4b4b4b;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #fff;
+    height: 50px;
+    z-index: 1;
+    overflow: hidden;
+    position: relative;
+}
+
+.header__navbar-list{
+    display: flex;
+    font-size: 1.8rem;
+    padding-left: 0;
+    margin: 0;
+    
+}
+
+.header__navbar-item{
+    list-style: none;
+    flex: 1;
+    --height: 50px;
+    height: var(--height);
+    line-height: var(--height);
+    text-align: center;
+
+}
+
+.home-color{
+    background-color: #96b285;
+    color: var(--text-color);
+}
+/* mobile menu  */
+.mobile__menu-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+.mobile__menu-icon{
+    font-size: 2.4rem;
+    padding:12px 12px 12px 16px ;
+}
+
+.mobile__menu-btn:hover,
+.header__navbar-item :hover{
+    background-color: #daead0;
+    color: var(--text-color);
+}
+
+.header__navbar-link{
+    text-decoration: none;
+    color: var(--white-color);
+    font-weight: 300;
+    width: 100%;
+    display: block;
+}
+
+
+
+
+.container__gardening{
+    position: relative;
+}
+
+.gardening__img-link{
+    width: 100%;
+    border-radius: 2px;
+    opacity: 1;
+}
+
+.gardening__img-link:hover{
+    opacity: 0.9;
+}
+
+.gardening__content{
+    position: absolute;
+    bottom: 5px;
+    background: url(../img/bg-description.png);
+    width: 100%;
+    padding: 0 20px;
+    left: 0;
+    border-radius: 2px;
+}
+
+.gardening__content-title{
+    color: #e3e699;
+    font-size: 4rem;
+    text-decoration: none;
+    padding: 20px 0 12px;
+    display: block;
+}
+
+.gardening__content-text{
+    color: var(--white-color);
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 2.2rem;
+    position: relative;
+}
+
+.gardening__content-icon{
+    color: #fff;
+    padding: 1px 0 0 4px;
+    font-size: 1.8rem;
+    position: absolute;
+}
+
+.classify{
+    display: flex;
+    padding: 16px 24px;
+}
+
+.classify-list{
+    flex: 1;
+    display: flex;
+    position: relative;
+}
+
+.classify-list:nth-child(2){
+    margin: 0 50px;
+}
+
+.classify-list::after{
+    content:"";
+    position: absolute;
+    top: 0;
+    right: -35px;
+    border-right: 1px solid #245607;
+    height: 100%;
+    box-shadow: 1px 2px 1px #8f8e8e;
+}
+
+.classify-list:nth-child(3).classify-list::after{
+    display: none;
+}
+
+.classify-list a{
+    margin: auto;
+}
+.classify-img{
+    border: 1px solid var(--white-color);
+    flex-direction: column;
+    width: 90px;
+    height: 98px;
+}
+
+.classify__content{
+    margin-left: 12px;
+    flex: 1;
+}
+
+.classify__title{
+    color: #e3e699;
+    font-weight: 300;
+    font-size: 1.8rem;
+    margin: 0 0 8px;
+}
+
+.classify__text{
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: var(--white-color);
+    font-weight: 300;
+    margin: 0;
+    text-align: justify;
+}
+
+
+/* product  */
+
+.product{
+    background-color: #fff;
+    padding: 23px 24px 0;
+}
+
+.product__header{
+    background-color: #dce9d4;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 20px;
+    border-bottom: 2px solid #b3cca4;
+    border-radius: 2px;
+}
+
+.product__header-title{
+    font-size: 1.8rem;
+    color: #836145;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.product__list{
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.product__list-item{
+    max-width: 200px;
+    /* width: calc(100% / 5); */
+    margin: auto;
+    margin-top: 10px;  
+    /* flex: 1;  */
+}
+
+.product__list-item:first-child{
+    margin-left: 0;
+}
+
+.product__list-item:last-child{
+    margin-right: 0;
+}
+
+.product__item-img{
+    opacity: 0.95;
+    border: 1px solid #ccc;
+}
+ 
+.product__item-img:hover{
+    opacity: 1;
+}
+
+.product__item-title{
+    color: #836145;
+    font-size: 1.6rem;
+    font-weight: 400;
+    padding: 12px 0 8px;
+    margin: 0;
+}
+
+.product__item-text{
+    margin: 0;
+    font-size: 1.3rem;
+    color: var(--text-color);
+    line-height: 1.8rem;
+    text-align: justify;
+
+}
+
+/* advice */
+
+.advice{
+    display: flex;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+    padding-bottom: 20px;
+}
+
+.advice-img{
+    border: 1px solid #ccc;
+    max-height: 300px;
+}
+
+.advice__content-title{
+    background-color: #dce9d4;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 20px;
+    border-bottom: 2px solid #b3cca4;
+    border-radius: 2px;
+}
+
+.advice__content-text{
+    font-size: 1.8rem;
+    color: #836145;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-left: 20px;
+}
+
+.advice__list{
+    list-style: none;
+    padding: 0;
+    margin-left:20px;
+    
+}
+
+.advice__list-item-number{
+    font-size: 1.8rem;
+    margin-bottom: 0;
+    font-weight: 500;
+}
+
+.advice__list-item-text{
+    font-size: 1.6rem;
+    color: var(--text-color);
+    font-weight: 300;
+    margin-top: 10px;
+    line-height: 2rem;
+    text-align: justify;
+}
+
+
+/* footer  */
+
+.footer{
+    background-color: #dce9d4;
+    /* padding: 23px 24px 0; */
+}
+
+.footer__menu{
+    display: flex;
+}
+
+.footer__item{
+    flex: 1;
+    color: #8c8c8c;
+    padding: 20px 24px;
+    border-top: 1px solid #b8d0aa;
+    border-left: 1px solid #b8d0aa;
+}
+
+.footer__item:first-child{
+    border-left: unset;
+}
+
+.footer__header-title{
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: normal;
+    text-shadow: 1px 1px 1px #ffffff;
+    text-align: justify;
+    text-transform: uppercase;
+    padding-bottom: 12px;
+    color: #000;
+}
+
+.footer__item-list{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    text-decoration: none;
+}
+
+.footer__item-link a{
+    font-size: 1.4rem;
+    color: #8c8c8c;
+    text-decoration: none;
+    line-height: 1.6rem;
+    text-align: justify;
+    padding: 0 0 8px 0;
+    display: block;
+}
+
+
+.footer__item-link:hover a{
+    color: var(--text-color);
+}
+
+.fa-solid.fa-envelope{
+    font-size: 1.9rem;
+}
+
+.footer__item-icon-link{
+    font-size: 2rem;
+    color: #245607;
+    padding-right: 6px;
+}
+
+.address p {
+    color: var(--white-color);
+    text-align: center;
+    margin: 0;
+    padding: 12px;
+    font-size: 1.4rem;
+    overflow: hidden;
+}
