@@ -1,0 +1,18 @@
+:root{
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color:#333;
+
+    --background-color-hover: #ccc;
+}
+
+*{
+    box-sizing: inherit;  /*Kế thừa thẻ chứa nó*/
+}
+
+html{
+    font-size: 62.5%; /*62.5% = 10 px*/
+    line-height: 1.6rem;  /* 1.6 rem = 16 px*/
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}

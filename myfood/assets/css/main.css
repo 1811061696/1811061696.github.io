@@ -1,0 +1,384 @@
+.app{
+    overflow: hidden;
+}
+
+/* header  */
+.header{
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--white-color);
+}
+
+.header__navbar{
+    position: sticky;
+    position: -webkit-sticky; /*css navbar bám vào bên trên của màn hình*/
+    top: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2.4rem;
+    color: var(--text-color);
+}
+
+.header__menu{
+    padding: 16px;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.header__menu:hover{
+    background-color: var(--background-color-hover);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.header__title{
+    margin: 0;
+    line-height: 2.4rem;
+    text-align: justify;
+    text-transform: uppercase;
+    color: var(--text-color);
+
+}
+
+.header__address{
+    padding: 16px;
+}
+
+.header__mail{
+    margin: 0;
+    line-height: 2.4rem;
+    text-align: justify;
+    text-transform: uppercase;
+    color: var(--text-color);
+}
+
+
+/* menu  */ 
+.header_sidebar-input:checked ~ .header_sidebar{
+    display: block;
+}
+.header_sidebar{
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 40%;
+    min-width: 300px;
+    height: 100vh;
+    background-color: var(--white-color);
+    border-right: 1px solid #ccc;
+    box-shadow: 0 1px 6px #ccc;
+    animation: sidebarOpen linear 0.3s;
+}
+
+@keyframes sidebarOpen {
+    from{
+        opacity: 0;
+        left: -536px;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.header_sidebar-list{
+    list-style: none;
+    padding-left: 0;
+    font-size: 2.4rem;
+    margin: 0;
+}
+
+.header_sidebar-item{
+    padding: 20px;
+    overflow: hidden;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.header_sidebar-item:hover{
+    background-color: var(--background-color-hover);
+    transition: all 0.1s;
+}
+
+.header_sidebar-link{
+    text-decoration: none;
+    margin: 0;
+}
+
+.header_sidebar-name{
+    color: var(--text-color);
+    margin: 0;
+    line-height: 1.5;
+    letter-spacing: 0.02rem;
+    font-weight: 400;
+}
+
+.container{
+    margin-top: 120px;
+}
+
+/* product  */
+#product{
+    padding: 0 40px;
+}
+
+.product__item{
+    margin-bottom: 40px;
+}
+
+.product__item-img img{
+    width: 100%;
+    border-radius: 2px;
+}
+
+.product__item-title{
+    font-size: 2.4rem;
+    letter-spacing: 0.02rem;
+    text-align: center;
+    line-height: 1.4;
+    margin: 0;
+    font-weight: 400;
+    padding: 10px 4px;
+}
+
+.product__item-text{
+    margin: 0;
+    font-size: 1.5rem;
+    letter-spacing: 0.02rem;
+    text-align: center;
+    line-height: 1.4;
+    font-weight: 300;
+    color: var(--text-color);
+}
+
+/* paging */
+
+.paging{
+  margin-bottom: 30px;
+}
+
+
+.paging-list{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    font-size: 1.4rem;
+}
+
+.paging-item{
+    padding: 16px 18px;
+}
+
+.paging-item:hover{
+    background-color: var(--black-color);
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+.paging-item:hover .paging-item-link{
+    color: var(--white-color);
+}
+
+.paging-item-active{
+    background-color: var(--black-color);
+    color: var(--white-color);
+}
+
+.paging-item-active .paging-item-link{
+    color: var(--white-color);
+}
+
+.paging-item-icon{
+    font-size: 0.9rem;
+}
+
+.paging-item-link{
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+
+/* about */
+#about{
+    padding: 30px 0;
+    border-top: 1px solid #eeeeee;
+}
+
+.adbout__title{
+    margin: 0;
+    text-align: center;
+    font-size: 2.4rem;
+    letter-spacing: 0.02rem;
+    padding-bottom: 30px;
+    line-height: 1.6;
+    font-weight: 300;
+}
+
+.about__img{
+    margin: auto;
+    display: block;
+}
+
+.about__information{
+    padding-top: 30px;
+    text-align: center;
+}
+
+.about__information-name{
+    margin: 0;
+    font-size: 1.8rem;
+    line-height: 1.6;
+    letter-spacing: 0.02rem;
+    font-weight: 600;
+    text-shadow: 1px 2px #eeeeee;
+}
+
+.about__information-text{
+    font-size: 1.6rem;
+    line-height: 1.4;
+    letter-spacing: 0.02rem;
+    font-weight: 300;
+    font-style: italic;
+    color: #4c4949;
+}
+
+.about__text{
+    font-size: 1.6rem;
+    line-height: 1.4;
+    letter-spacing: 0.02rem;
+    text-align: center;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+/* footer */
+
+.footer{
+    padding-top: 40px;
+    border-top: 1px solid #ccc;
+}
+
+.footer_row{
+    padding-bottom: 40px;
+}
+
+
+.footer__list-name{
+    font-size: 2.4rem;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+.footer__title-text{
+    font-size: 1.4rem;
+    text-align: justify;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+.blog__item{
+    width: 100%;
+    display: flex;
+    padding:12px 0 12px 12px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.blog__item:last-child{
+    border-bottom: unset;
+}
+
+.blog__item:hover{
+    background-color: var(--background-color-hover);
+}
+
+.blog__item-bark{
+    width: 20%;
+}
+
+.blog__item-img{
+    width: 100%;
+    margin: auto;
+}
+
+.blog__content{
+    width: 100%;
+    padding-left: 12px;
+}
+
+.blog__content-title{
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin: 0;
+    padding: 0 10px 16px 0;
+    line-height: 1.4;
+}
+
+.blog__content-text{
+    font-size: 1.4rem;
+    font-weight: 300;
+    margin: 0;
+    line-height: 1.4;
+    text-align: justify;
+}
+
+.tags__list{
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tags__item{
+    min-width: 65px;
+    height: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 20px;
+    background-color: #4c4949;
+    margin:0 6px 6px 0;
+}
+
+.tags__item:hover{
+    animation:itemActive ease-in 0.2s ;
+    background-color: var(--background-color-hover);
+}
+
+.tags__item:hover .tags__item-link{
+    color: var(--text-color);
+}
+
+.tags__item-active{
+    background-color: var(--black-color);
+}
+@keyframes itemActive{
+    from{
+        transform: translateY(0);
+
+    }
+    to{
+        transform: translateY(-2px);
+    }
+}
+
+.tags__item-link{
+    color: var(--white-color);
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.footer__note{
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    letter-spacing: 0.02rem;
+    margin: 0;
+    padding: 20px 0;
+    border-top: 1px solid #eeeeee;
+}

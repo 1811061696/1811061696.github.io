@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/gird.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.1.1-web/fontawesome-free-6.1.1-web/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <title>MY FOOD</title>
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="gird wide">
+                <div class="header__navbar">
+                    <label for="header_sidebar-menu" onclick="open_sidebar()" class="header__menu">
+                        <i class="header__menu-icon fa-solid fa-bars"></i>
+                    </label>
+                    <div class="header__name">
+                        <p class="header__title">My food</p>
+                    </div>
+                    <div class="header__address">
+                        <p class="header__mail">Mail</p>
+                    </div>
+                </div>
+                
+                <input type="checkbox" hidden id="header_sidebar-menu" class="header_sidebar-input">
+                <div id="mysidebar" class="header_sidebar">
+                    <ul class="header_sidebar-list">
+                        <li class="header_sidebar-item">
+                            <a href="" class="header_sidebar-link">
+                                <p class="header_sidebar-name">Home</p>
+                            </a>
+                        </li>
+                        <li class="header_sidebar-item">
+                            <a href="#product" onclick="close_sidebar()" class="header_sidebar-link">
+                                <p class="header_sidebar-name">Food</p>
+                            </a>
+                        </li>
+                        <li class="header_sidebar-item">
+                            <a href="#about" onclick="close_sidebar()" class="header_sidebar-link">
+                                <p class="header_sidebar-name">About</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+
+        <div class="container">
+            <div class="gird wide">
+                <div id="product" class="row">
+                    <div class="col l-3 m-3">
+                        <div class="product__item">
+                            <div class="product__item-img">
+                                <img src="./assets/img/sandwich.jpg" alt="Bánh sandwich">
+                            </div>
+                            <h2 class="product__item-title">The Perfect Sandwich, A Real NYC Classic</h2>
+                            <p class="product__item-text">Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+                        </div>
+                    </div>
+
+                    <div class="col l-3 m-3">
+                        <div class="product__item">
+                            <div class="product__item-img">
+                                <img src="./assets/img/steak.jpg" alt="Bò bitsteak">
+                            </div>
+                            <h2 class="product__item-title">Let Me Tell You About This Steak</h2>
+                            <p class="product__item-text">Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+                        </div>
+                    </div>
+
+                    <div class="col l-3 m-3">
+                        <div class="product__item">
+                            <div class="product__item-img">
+                                <img src="./assets/img/cherries.jpg" alt="Quả cherries">
+                            </div>
+                            <h2 class="product__item-title">Cherries, interrupted</h2>
+                            <p class="product__item-text">Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+                            <p class="product__item-text">What else?</p>
+                        </div>
+                    </div>
+
+                    <div class="col l-3 m-3">
+                        <div class="product__item">
+                            <div class="product__item-img">
+                                <img src="./assets/img/wine.jpg" alt="Rượu vang">
+                            </div>
+                            <h2 class="product__item-title">Once Again, Robust Wine and Vegetable Pasta</h2>
+                            <p class="product__item-text">Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+                        </div>
+                    </div> 
+
+                    <div class="col l-3 m-3">
+                        <div class="product__item">
+                            <div class="product__item-img">
+                                <img src="./assets/img/popsicle.jpg" alt="Kem">
+                            </div>
+                            <h2 class="product__item-title">All I Need Is a Popsicle</h2>
+                            <p class="product__item-text">Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+                        </div>
+                    </div>
+
+                    <div class="col l-3 m-3">
+                        <div class="product__item">
+                            <div class="product__item-img">
+                                <img src="./assets/img/salmon.jpg" alt="salmon">
+                            </div>
+                            <h2 class="product__item-title">Salmon For Your Skin</h2>
+                            <p class="product__item-text">Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+                        </div>
+                    </div>
+
+                    <div class="col l-3 m-3">
+                        <div class="product__item">
+                            <div class="product__item-img">
+                                <img src="./assets/img/sandwich.jpg" alt="Bánh sandwich">
+                            </div>
+                            <h2 class="product__item-title">The Perfect Sandwich, A Real NYC Classic</h2>
+                            <p class="product__item-text">Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+                        </div>
+                    </div>
+
+                    <div class="col l-3 m-3">
+                        <div class="product__item">
+                            <div class="product__item-img">
+                                <img src="./assets/img/croissant.jpg" alt="le French">
+                            </div>
+                            <h2 class="product__item-title">Le French</h2>
+                            <p class="product__item-text">Lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+ 
+                <!-- phân trang  -->
+                <div class="paging">
+                    <ul class="paging-list">
+                        <li class="paging-item">
+                            <i class="paging-item-icon fa-solid fa-angles-left"></i>
+                        </li>
+                        <li class="paging-item paging-item-active">
+                            <a href="" class="paging-item-link">1</a>
+                        </li>
+                        <li class="paging-item">
+                            <a href="" class="paging-item-link">2</a>
+                        </li>
+                        <li class="paging-item">
+                            <a href="" class="paging-item-link">3</a>
+                        </li>
+                        <li class="paging-item">
+                            <a href="" class="paging-item-link">4</a>
+                        </li>
+                        <li class="paging-item">
+                            <i class="paging-item-icon fa-solid fa-angles-right"></i>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="about">
+                    <p class="adbout__title">
+                        About Me, The Food Man
+                    </p>
+                    <img src="./assets/img/chef.jpg" alt="chef" class="about__img">
+                    <div class="about__information">
+                        <h2 class="about__information-name">I am Who I Am!</h2>
+                        <p class="about__information-text">With Passion For Real, Good Food</p>
+                    </div>
+                    <div class="about__text">Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="gird wide">
+                <div class="row footer_row">
+                    <div class="col l-4 m-4 c-12">
+                        <div class="footer__list">
+                            <h2 class="footer__list-name">
+                                FOOTER
+                            </h2>
+                            <p class="footer__title-text">
+                                Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col l-4 m-4 c-12">
+                        <div class="footer__list">
+                            <h2 class="footer__list-name">
+                                BLOG POSTS
+                            </h2>
+                            <div class="blog__list">
+                                <div class="blog__item">
+                                    <div class="blog__item-bark">
+                                        <img src="./assets/img/workshop.jpg" alt="" class="blog__item-img">
+                                    </div>
+                                    <div class="blog__content">
+                                        <h3 class="blog__content-title">Lorem</h3>
+                                        <p class="blog__content-text">Sed mattis nunc</p>
+                                    </div>
+                                </div>
+                                <div class="blog__item">
+                                    <div class="blog__item-bark">
+                                        <img src="./assets/img/gondol.jpg" alt="" class="blog__item-img">
+                                    </div>
+                                    <div class="blog__content">
+                                        <h3 class="blog__content-title">Ipsum</h3>
+                                        <p class="blog__content-text">Praes tinci sed</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col l-4 m-4 c-12">
+                        <div class="footer__list">
+                            <h2 class="footer__list-name">
+                                POPULAR TAGS
+                            </h2>
+                            <ul class="tags__list">
+                                <li class="tags__item  tags__item-active">
+                                    <a href="" class="tags__item-link">Travel</a>
+                                </li>
+                                <li class="tags__item">
+                                    <a href="" class="tags__item-link">New York</a>
+                                </li>
+                                <li class="tags__item">
+                                    <a href="" class="tags__item-link">Dinner</a>
+                                </li>
+                                <li class="tags__item">
+                                    <a href="" class="tags__item-link">Salmon</a>
+                                </li>
+                                <li class="tags__item">
+                                    <a href="" class="tags__item-link">France</a>
+                                </li>
+                                <li class="tags__item">
+                                    <a href="" class="tags__item-link">Drinks</a>
+                                </li>
+                                <li class="tags__item">
+                                    <a href="" class="tags__item-link">Ideas</a>
+                                </li>
+                                <li class="tags__item">
+                                    <a href="" class="tags__item-link">Flavors</a>
+                                </li>
+                                <li class="tags__item">
+                                    <a href="" class="tags__item-link">Cuisine</a>
+                                </li>
+                                <li class="tags__item">
+                                    <a href="" class="tags__item-link">Chicken</a>
+                                </li>
+                                <li class="tags__item">
+                                    <a href="" class="tags__item-link">Dressing</a>
+                                </li>
+                                <li class="tags__item">
+                                    <a href="" class="tags__item-link">Fried</a>
+                                </li>
+                                <li class="tags__item">
+                                    <a href="" class="tags__item-link">Fish</a>
+                                </li>
+                                <li class="tags__item">
+                                    <a href="" class="tags__item-link">Duck</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="footer__note">Luyện tập HTML CSS by Thành xi</p>
+            </div>
+        </footer>
+    </div>
+    <script>
+        function open_sidebar(){
+            document.getElementById("mysidebar").style.display = "block"
+        }
+    
+        function close_sidebar(){
+            document.getElementById("mysidebar").style.display = "none";
+        }
+    </script>
+</body>
+</html>
