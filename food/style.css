@@ -1,0 +1,238 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  html {
+    color: #333;
+    font-size: 62.5%;
+    font-family: "Open Sans", sans-serif;
+  }
+
+  body {
+    background: #ece9e6;
+    background: -webkit-linear-gradient(to right, #ffffff, #ece9e6);
+    background: linear-gradient(to right, #ffffff, #ece9e6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  img {
+      max-width: 100%;
+    }
+
+  .mobile-container{
+    width: 400px;
+    box-shadow: 0 0 10px 2px #3333331a;
+    border-radius: 3px;
+    overflow: hidden;
+    background-color: #fff;
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  header input {
+    background-color: #eee;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    outline: none;
+    font-family: inherit;
+  }
+
+  header button {
+    background-color: transparent;
+    color: #aaa;
+    font-size:1.8rem ;
+    cursor: pointer;
+    border: none;
+    margin-left: 10px;
+
+  }
+
+  .fav-container {
+    background-color: rgb(233 , 199, 255);
+    padding: 1rem;
+}
+
+.contaner-titel{
+    text-align: center;
+    font-size: 2rem;
+    margin: 12px 0
+}
+
+.fav-meals {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  
+  .fav-meals li {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    margin: 8px 20px  0;
+    max-height:120px ;
+  }
+
+  .fav-meals li .clear{
+    position: absolute;
+    background-color: transparent;
+    top: 1px;
+    right: 0px;
+    font-size: 1.6rem;
+    opacity: 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .fav-meals li:hover .clear{
+    opacity: 1;
+  }
+
+  .fav-meals li img {
+    border: 2px solid #ffffff;
+    box-shadow: 0 0 10px 2px #3333331a;
+    border-radius: 50%;
+    object-fit: cover;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+  }
+
+  .fav-meals li  span {
+    font-size: 1.2rem;
+    margin-top: 6px;
+    text-align: center;
+    width: 50px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-bottom: 12px;
+  }
+
+  .meal{
+    cursor: pointer;
+    margin: 1.5rem;
+    box-shadow: 0 0 10px 2px #3333331a;
+    border-radius: 3px;
+    overflow: hidden;
+  }
+
+  .meal-header{
+    position: relative;
+    }
+
+    .meal-header img{
+        height: 300px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .random{
+        position: absolute;
+        top: 10px;
+        background-color: #fff;
+        padding: 0.25rem 1rem;
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+    }
+
+  .meal-body{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+
+  .meal-body h4{
+    margin: 0;
+    font-size: 1.2rem;
+  }
+
+  .meal-body .fav-btn{
+    background-color: transparent;
+    color: gray;
+    cursor: pointer;
+    border: none;
+    font-size:1.2rem ;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .meal-body .fav-btn .active{
+    color: red;
+  }
+
+
+  .popup-container{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .popup{
+    background-color: #fff;
+    padding: 0 2rem;
+    position: relative;
+    max-width: 500px;
+    max-height: 100vh;
+    overflow: auto;
+    text-align: justify;
+    font-size: 1.2rem;
+    line-height: 1.4;
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  .meal-info h1{
+    text-align: center;
+    padding: 8px 0;
+  }
+
+  .meal-info img {
+    max-width: 100%;
+  }
+  
+  .meal-info ul {
+    padding: 12px 0 12px 30px;
+  }
+  .close-popup{
+    position: absolute;
+    top: 0;
+    right: 0.5rem;
+    background-color: transparent;
+    outline: none;
+    border:none;
+    padding: 4px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    opacity: 0.5;
+  }
+
+  .close-popup:hover{
+    opacity: 1;
+  }
+
+  .hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
