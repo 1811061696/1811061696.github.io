@@ -1,0 +1,93 @@
+.search,
+.search-result {
+    width: 361px;
+}
+
+.search {
+    position: relative;
+    height: var(--search-height);
+    padding-left: 16px;
+    display: flex;
+    background-color: rgba(22, 26, 35, 0.06);
+    border-radius: var(--search-border-radius);
+    border: 1.5px solid transparent;
+
+    input {
+        flex: 1;
+        font-size: 1.6rem;
+        height: 100%;
+        color: var(--black-color);
+        background-color: transparent;
+        caret-color: var(--primary);
+        font-family: var(--font-family);
+        padding-right: 40px;
+    }
+
+    input:not(:placeholder-shown) ~ .search-btn {
+        color: rgb(22, 24, 35, 0.75);
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: var(--search-top-spacer);
+        right: var(--search-btn-width);
+        width: 1px;
+        height: calc(var(--search-height) - calc(var(--search-top-spacer) * 2));
+        background-color: rgb(22, 24, 35, 0.12);
+    }
+
+    &:focus-within {
+        border-color: rgba(22, 24, 35, 0.2);
+    }
+}
+
+.search-title {
+    color: rgb(22, 24, 35, 0.5);
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 5px 12px;
+}
+
+.clear,
+.loading {
+    position: absolute;
+    right: calc(var(--search-btn-width) + 16px);
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.6rem;
+    color: rgb(22, 24, 35, 0.34);
+}
+
+.loading {
+    animation: spinner 1.5s linear infinite;
+}
+
+@keyframes spinner {
+    from {
+        transform: translateY(-50%) rotate(0);
+    }
+    to {
+        transform: translateY(-50%) rotate(360deg);
+    }
+}
+.search-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--search-btn-width);
+    height: 100%;
+    border-top-right-radius: var(--search-border-radius);
+    border-bottom-right-radius: var(--search-border-radius);
+    font-size: 1.8rem;
+    color: rgb(22, 24, 35, 0.24);
+
+    &:hover {
+        background-color: rgb(22, 24, 35, 0.03);
+        cursor: pointer;
+    }
+
+    &:active {
+        background-color: rgb(22, 24, 35, 0.06);
+    }
+}
