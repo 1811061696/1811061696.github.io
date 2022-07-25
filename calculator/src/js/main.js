@@ -124,7 +124,7 @@ function clearAll() {
 
 // hiển thị number
 function getNumberButton(number) {
-  if (!(number === ".") || !start.match('[.]')) {  // kiểm tra giá trị nhập vào có phải dấu (.) không
+  if (!(number === ".") || !start.match('[.]')) {  // kiểm tra giá trị nhập vào có phải dấu (.) không/ đồng thời kiểm tra trong chuỗi đã có dấu (.) hay chưa
     start += number;
     resultUi.innerHTML += number;
   }
