@@ -1,14 +1,17 @@
+// import { ARRAY_NUMBER_BUTTON  } from "./commonConst.js"; 
+
+
 var container = document.querySelector(".container");
 var resultUi = document.querySelector(".result");
+
+
 
 
 var calculation = [];
 var start = 0;
 var lastResult = 0;
 
-
-
-const arrNumberButton = [
+const ARRAY_NUMBER_BUTTON = [
   {
     name: "7",
     text: 7,
@@ -96,15 +99,10 @@ const arrNumberButton = [
   },
 ];
 
-// hiển thị button
-const createNumberButton = () => {
-  arrNumberButton.forEach((item) => {
-    container.innerHTML += `<button id="${item.name}" class="button" 
-    onclick="${item.click}"
-    >${item.text}</button>`;
-  });
-};
-createNumberButton();
+
+
+
+
 
 
 // thêm value của nút được click vào mảng
@@ -117,14 +115,23 @@ function addToQueue(start) {
 function clearAll() {
   calculation = [];
   start = 0;
-  resultUi.innerHTML = "";
+  resultUi.innerHTML = "0";
 }
 
 
 
 // hiển thị number
 function getNumberButton(number) {
-  if (!(number === ".") || !start.match('[.]')) {  // kiểm tra giá trị nhập vào có phải dấu (.) không/ đồng thời kiểm tra trong chuỗi đã có dấu (.) hay chưa
+  if (lastResult != 0) {
+    clearAll();
+    lastResult = 0;
+  }
+
+  if (resultUi.innerHTML === "ERROR" || (resultUi.innerHTML == "0" && number != ".")) { // 
+    resultUi.innerHTML = "";
+  }
+
+  if (!(number === ".") || !start.match('[.]')) {  // kiểm tra giá trị nhập vào có phải dấu (.) không và trong mảng đã có dấu (.) chưa
     start += number;
     resultUi.innerHTML += number;
   }
@@ -144,6 +151,7 @@ function getMathButton(math) {
     start = "-"; 
     resultUi.innerHTML = "-";
   }
+ 
 }
 
 
@@ -171,7 +179,6 @@ function calculateQueue(value) {
             resultUi.innerHTML = "ERROR";
           } else {
               result = result / value[i];
-              console.log(value[i])
           }
           break;
         case "*":
@@ -190,3 +197,13 @@ function calculateQueue(value) {
       } 
   }
 
+
+  // hiển thị button
+  ARRAY_NUMBER_BUTTON.forEach((item) => {
+    container.innerHTML += `<button id="${item.name}" class="button" 
+    onclick = "${item.click}"
+   }
+    >
+     ${item.text}
+    </button>`;
+  });
