@@ -124,7 +124,7 @@ function clearAll() {
 
 // hiển thị number
 function getNumberButton(number) {
-  if (!(number === ".")) { // nếu giá trị nhập vào mà không phải dấu. thì  gán lại giá trị đầu vào là number
+  if (!(number === ".") || !start.match('[.]')) {  // kiểm tra giá trị nhập vào có phải dấu (.) không
     start += number;
     resultUi.innerHTML += number;
   }
@@ -133,15 +133,15 @@ function getNumberButton(number) {
 
 // hiển thị các phép tính toán
 function getMathButton(math) {
-  if (start !== 0 && start !== "-") { // nếu number khac 0 và number khac (-) thì thực hiện
-    start = parseFloat(start); // gán lại giá trị cho start
-    addToQueue(start); // thêm start vào mảng tính toán
-    addToQueue(math); // thêm phép tính vào mảng tính toán
-    resultUi.innerHTML += math; // hiển thị ra màn hình 
-    start = 0; // gán lại giá trị cho đầu vào
+  if (start !== 0 && start !== "-") { 
+    start = parseFloat(start); 
+    addToQueue(start); 
+    addToQueue(math); 
+    resultUi.innerHTML += math; 
+    start = 0; 
   }
   if (math == "-" && isNaN(calculation[0]) && start !== "-") { // nếu phép tính là phép trừ (-) và phần tử đầu tiên của mảng tính toán không phải là giá trị NAN 
-    start = "-"; // gán đầu vào là (-) và render ra màn hình
+    start = "-"; 
     resultUi.innerHTML = "-";
   }
 }
@@ -181,7 +181,7 @@ function calculateQueue(value) {
       lastResult = result;
     }
     result = result.toFixed(4) // lấy 4 chữ số sau số thập phân
-    result = parseFloat(result); // 
+    result = parseFloat(result); 
 
     if (ckeck !== 1) {
         resultUi.innerHTML = result;
